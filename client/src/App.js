@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
-
+import React, { Fragment } from "react";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+// import FullscreenLoader from "./components/masterLayout/Fullscreen-Loader";
+// import ProductList from "./pages/Product-List";
+const App = () => {
+        return (
+            <Fragment>
+                <BrowserRouter>
+                    <Routes>
+                            {/* <Route exact path="/" element={<ProductList  />} /> */}
+                    </Routes>
+                </BrowserRouter>
+                {/* <FullscreenLoader/> */}
+            </Fragment>
+        );
+};
 export default App;
